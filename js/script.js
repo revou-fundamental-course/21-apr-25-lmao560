@@ -16,7 +16,7 @@ function ConvertCtoF() {
   }
 
   if (isNaN(input)) {
-    error.innerText = "Input harus berupa angka!";
+    error.innerText = "Input harus berupa angka!!";
     return;
   }
 
