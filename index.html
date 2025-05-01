@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Konversi Suhu - Firdaus</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>🌡️ Konversi Suhu - Firdaus</h1>
+    </header>
+
+    <main>
+      <!-- Intro -->
+      <section>
+        <p>Masukkan suhu dalam satuan Celcius atau Fahrenheit, lalu tekan tombol konversi atau gunakan tombol reverse untuk membalik arah konversi.</p>
+      </section>
+
+      <!-- Form Konversi -->
+      <form class="form-wrapper">
+        <label id="input-label" for="konversi-input">Celcius (°C):</label>
+        <textarea id="konversi-input" placeholder="Masukkan suhu di sini..."></textarea>
+        <p id="error" class="error-text"></p>
+
+        <div class="btn-group">
+          <button type="button" class="btn primary" onclick="ConvertCtoF()">Konversi</button>
+          <button type="button" class="btn danger" onclick="resetForm()">Reset</button>
+          <button type="button" class="btn secondary" onclick="reversFtoC()">Reverse</button>
+        </div>
+      </form>
+
+      <!-- Hasil -->
+      <div class="result-box">
+        <label id="result-label" for="result-input">Fahrenheit (°F):</label>
+        <textarea id="result-input" readonly></textarea>
+      </div>
+
+      <div class="result-box">
+        <label for="calculate-detail">Detail Perhitungan:</label>
+        <textarea id="calculate-detail" readonly></textarea>
+      </div>
+
+      <!-- Penjelasan -->
+      <section class="info-section">
+        <h2 id="formula-title">Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</h2>
+        <hr />
+        <article id="formula-content">
+          <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (°F):</p>
+          <div class="formula">S<sub>(°F)</sub> = (S<sub>(°C)</sub> × 9/5) + 32</div>
+          <div>atau</div>
+          <div class="formula">S<sub>(°F)</sub> = (S<sub>(°C)</sub> × 1.8) + 32</div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Firdaus. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
