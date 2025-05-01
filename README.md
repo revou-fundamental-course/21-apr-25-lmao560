@@ -1,4 +1,4 @@
-# 🌡️ Website Konversi Suhu - Yama
+# 🌡️ Website Konversi Suhu - Firdaus
 
 Website ini merupakan aplikasi web sederhana untuk melakukan konversi suhu antara **Celsius** dan **Fahrenheit**. Dibuat menggunakan **HTML, CSS, dan JavaScript** dengan tampilan yang bersih dan fitur yang responsif.
 
